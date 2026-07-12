@@ -1,0 +1,509 @@
+// Comprehensive site data for Dr. Mulchandani's Advanced Ranjhi Dental Hospital
+
+export const CLINIC = {
+  name: "Dr. Mulchandani's Advanced Ranjhi Dental Hospital",
+  shortName: "Advanced Ranjhi Dental",
+  tagline: "Painless Dental Care",
+  slogan: "Your Smile, Our Priority",
+  address: "Main Road, Ranjhi, Jabalpur, Madhya Pradesh 482005",
+  addressShort: "Jabalpur, MP",
+  phone: "033 35675767",
+  phoneRaw: "03335675767",
+  phone2: "+91 9330153855",
+  phone3: "+91 8337098496",
+  email: "info@advancedentaljabalpur.in",
+  website: "www.advanceddentaljabalpur.in",
+  hours: "Mon - Sat: 10:00 AM - 8:30 PM",
+  emergency: "24×7 Emergency",
+  whatsapp: "+91 90989 12345",
+  googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.5638404117526!2d79.193...placeholder",
+};
+
+export const TRUST_BADGES = [
+  "Smile Design",
+  "15+ Years Experience",
+  "4.9★ Google Rating",
+  "ISO Certified Clinic",
+  "OSHA Sterilization",
+  "Painless Laser Dentistry",
+  "Digital Smile Design",
+  "15+ Years Experience",
+  "4.9★ Google Rating"
+];
+
+export const HERO = {
+  title: "Your Smile Deserves Excellence",
+  subtitle: "Experience world-class dental care with cutting-edge technology and compassionate treatment",
+  cta1: "Book Free Consultation",
+  cta2: "Call Now",
+  backgroundImage: "/hero-dental.jpg"
+};
+
+export const TREATMENTS = [
+  {
+    id: "orthodontics",
+    name: "Orthodontics",
+    icon: "🦷",
+    shortDesc: "Straight teeth transformation",
+    fullDesc: "Expert orthodontic solutions for perfect tooth alignment using latest technology including traditional braces and modern aligners.",
+    image: "/images/treatment-orthodontics.png",
+    services: [
+      { name: "Fixed Braces", desc: "Traditional metal braces for effective tooth alignment" },
+      { name: "Ceramic Braces", desc: "Tooth-colored braces for aesthetic appearance" },
+      { name: "Lingual Braces", desc: "Hidden braces placed behind teeth" },
+      { name: "Invisalign", desc: "Clear, removable aligners for discrete treatment" },
+      { name: "Space Closure", desc: "Close gaps between teeth" },
+      { name: "Bite Correction", desc: "Fix overbite, underbite, and crossbite" },
+      { name: "Retention", desc: "Maintain results with custom retainers" }
+    ],
+    benefits: [
+      "Improved bite and chewing function",
+      "Enhanced smile aesthetics",
+      "Better oral hygiene",
+      "Reduced jaw pain and TMJ issues",
+      "Increased confidence and self-esteem",
+      "Better speech clarity"
+    ]
+  },
+  {
+    id: "implants",
+    name: "Dental Implants",
+    icon: "🦷",
+    shortDesc: "Permanent tooth replacement",
+    fullDesc: "Advanced dental implant technology for missing teeth replacement with osseointegration and lifetime durability.",
+    image: "/images/treatment-implants.png",
+    services: [
+      { name: "Single Tooth Implant", desc: "Replace one missing tooth" },
+      { name: "Multiple Implants", desc: "Replace several teeth with multiple implants" },
+      { name: "Full Arch Implants", desc: "Complete upper or lower jaw replacement" },
+      { name: "Immediate Loading", desc: "Tooth placement same day as implant" },
+      { name: "Bone Grafting", desc: "Build jaw bone for implant support" },
+      { name: "Sinus Lift", desc: "Increase bone height in upper jaw" },
+      { name: "Implant Maintenance", desc: "Professional cleaning and care" }
+    ],
+    benefits: [
+      "Permanent tooth replacement",
+      "Natural look and feel",
+      "Improved chewing efficiency",
+      "Preserves jaw bone structure",
+      "Prevents facial collapse",
+      "Lifelong solution with proper care",
+      "High success rate (98%+)"
+    ]
+  },
+  {
+    id: "cosmetic",
+    name: "Cosmetic Dentistry",
+    icon: "✨",
+    shortDesc: "Smile makeover services",
+    fullDesc: "Transform your smile with comprehensive cosmetic dental procedures to enhance beauty and confidence.",
+    image: "/images/treatment-cosmetic.png",
+    services: [
+      { name: "Teeth Whitening", desc: "Professional bleaching for bright white smile" },
+      { name: "Composite Bonding", desc: "Repair chips and gaps with tooth-colored resin" },
+      { name: "Veneers", desc: "Porcelain shells to reshape teeth" },
+      { name: "Crown & Bridge", desc: "Cover damaged teeth with crowns" },
+      { name: "Smile Design", desc: "Digital smile makeover planning" },
+      { name: "Gum Contouring", desc: "Reshape gums for perfect smile" },
+      { name: "Aesthetic Fillings", desc: "Invisible restorations with composite materials" }
+    ],
+    benefits: [
+      "Dramatically enhanced smile",
+      "Increased confidence",
+      "Improved self-image",
+      "Professional appearance",
+      "Natural-looking results",
+      "Durable and long-lasting",
+      "Quick transformation"
+    ]
+  },
+  {
+    id: "periodontics",
+    name: "Periodontics & Implants",
+    icon: "🌱",
+    shortDesc: "Gum health and implantology",
+    fullDesc: "Specialized treatment for gum diseases and comprehensive implant dentistry solutions.",
+    image: "/images/treatment-root-canal.png",
+    services: [
+      { name: "Gum Treatment", desc: "Cure gingivitis and periodontitis" },
+      { name: "Scaling & Root Planing", desc: "Deep cleaning for gum health" },
+      { name: "Flap Surgery", desc: "Advanced gum disease treatment" },
+      { name: "Bone Regeneration", desc: "Restore lost bone structure" },
+      { name: "Implant Placement", desc: "Expert implant surgery" },
+      { name: "Implant Restoration", desc: "Complete implant crowns and dentures" }
+    ],
+    benefits: [
+      "Healthy gums and bones",
+      "Prevention of tooth loss",
+      "Better overall health",
+      "Fresher breath",
+      "Reduced bleeding and swelling",
+      "Successful implant support",
+      "Long-term oral health"
+    ]
+  },
+  {
+    id: "restorative",
+    name: "Restorative Dentistry",
+    icon: "🔧",
+    shortDesc: "Tooth repair and restoration",
+    fullDesc: "Comprehensive restoration solutions for damaged teeth using advanced materials and techniques.",
+    image: "/images/treatment-whitening.png",
+    services: [
+      { name: "Amalgam Fillings", desc: "Traditional silver amalgam restoration" },
+      { name: "Composite Fillings", desc: "Tooth-colored aesthetic fillings" },
+      { name: "Root Canal Treatment", desc: "Save infected teeth with endodontic therapy" },
+      { name: "Crowns & Bridges", desc: "Protect and restore damaged teeth" },
+      { name: "Inlays & Onlays", desc: "Partial tooth restoration" },
+      { name: "Post & Core", desc: "Support for severely damaged teeth" }
+    ],
+    benefits: [
+      "Restored tooth function",
+      "Pain relief and comfort",
+      "Preservation of natural teeth",
+      "Improved appearance",
+      "Prevention of further damage",
+      "Long-lasting solutions",
+      "Restored chewing ability"
+    ]
+  },
+  {
+    id: "preventive",
+    name: "Preventive Care",
+    icon: "🛡️",
+    shortDesc: "Dental health maintenance",
+    fullDesc: "Professional preventive care to maintain optimal oral health and prevent future problems.",
+    image: "/images/treatment-kids.png",
+    services: [
+      { name: "Regular Checkups", desc: "Bi-annual dental examination" },
+      { name: "Professional Cleaning", desc: "Remove tartar and plaque buildup" },
+      { name: "Fluoride Treatment", desc: "Strengthen enamel and prevent decay" },
+      { name: "Sealants", desc: "Protect teeth from decay" },
+      { name: "Oral Hygiene Guidance", desc: "Expert tips for home care" },
+      { name: "Early Detection", desc: "Identify problems before they worsen" }
+    ]
+  }
+];
+
+export const SERVICES = {
+  orthodontics: {
+    title: "Orthodontics",
+    description: "Achieve the perfect smile with our comprehensive orthodontic solutions. We offer a range of options from traditional braces to modern invisible aligners, all designed to give you straight teeth and a confident smile.",
+    benefits: [
+      "Improved bite alignment",
+      "Enhanced facial aesthetics",
+      "Better oral hygiene",
+      "Increased confidence",
+      "Long-lasting results",
+      "Discreet treatment options"
+    ],
+    process: [
+      "Initial consultation and examination",
+      "Digital 3D treatment planning",
+      "Custom braces or aligner fabrication",
+      "Regular monthly adjustments",
+      "Retention phase for lasting results"
+    ],
+    timeline: "18-36 months depending on complexity"
+  },
+  braces: {
+    title: "Dental Braces",
+    description: "Traditional and advanced braces for effective tooth alignment. Our orthodontists use the latest bracket technology and wire materials for efficient and comfortable treatment.",
+    types: [
+      { name: "Metal Braces", desc: "Most effective and affordable option" },
+      { name: "Ceramic Braces", desc: "Tooth-colored, aesthetic appearance" },
+      { name: "Lingual Braces", desc: "Hidden behind teeth for complete discretion" }
+    ],
+    whyChooseUs: [
+      "Expert orthodontists with 20+ years experience",
+      "Latest German and Swiss technology",
+      "Painless and comfortable treatment",
+      "Customized treatment plans",
+      "Affordable pricing with flexible payment options",
+      "Regular progress monitoring and adjustments"
+    ]
+  },
+  invisalign: {
+    title: "Invisalign Clear Aligners",
+    description: "Transform your smile discreetly with Invisalign clear aligners. These virtually invisible trays gradually align your teeth without brackets or wires, allowing you to smile throughout treatment.",
+    benefits: [
+      "Completely invisible treatment",
+      "Removable for eating and cleaning",
+      "More comfortable than braces",
+      "Shorter treatment time",
+      "Predictable results with digital planning",
+      "No dietary restrictions"
+    ],
+    process: [
+      "Digital 3D smile assessment",
+      "Custom aligner series creation",
+      "Wear each aligner for 1-2 weeks",
+      "Easy removal and replacement",
+      "Regular virtual or in-person checkups",
+      "Retention with final fixed retainer"
+    ],
+    whyChooseCare: [
+      "Gold Invisalign Provider certification",
+      "Over 5000 successful treatments",
+      "Latest iTero digital scanning",
+      "Competitive pricing",
+      "Lifetime warranty on results",
+      "Expert team trained in latest techniques"
+    ]
+  },
+  cosmetic: {
+    title: "Cosmetic Dentistry - Smile Makeover",
+    description: "Achieve the smile of your dreams with our comprehensive cosmetic dental services. From teeth whitening to full smile makeovers, we use advanced techniques and premium materials.",
+    procedures: [
+      { name: "Teeth Whitening", desc: "Professional whitening for bright, white teeth in 1 hour" },
+      { name: "Dental Veneers", desc: "Thin porcelain shells to reshape your smile" },
+      { name: "Composite Bonding", desc: "Repair chips and close gaps with tooth-colored resin" },
+      { name: "Gum Contouring", desc: "Perfect your gum line for an ideal smile" },
+      { name: "Smile Design", desc: "Digital smile makeover and planning" },
+      { name: "Full Mouth Rehabilitation", desc: "Complete smile transformation" }
+    ],
+    results: "Dramatic improvement in 1-3 visits"
+  },
+  implants: {
+    title: "Dental Implants - Permanent Tooth Replacement",
+    description: "Replace missing teeth with dental implants - the gold standard in tooth replacement. Our implants are made from biocompatible materials and designed to last a lifetime.",
+    advantages: [
+      "Permanent tooth replacement",
+      "Looks and feels like natural teeth",
+      "Preserves jaw bone structure",
+      "Maintains facial structure",
+      "No damage to adjacent teeth",
+      "High success rate (98%+)",
+      "Lifetime durability with proper care"
+    ],
+    process: [
+      "Comprehensive evaluation and planning",
+      "3D CBCT scanning",
+      "Implant placement surgery",
+      "Osseointegration period (3-6 months)",
+      "Abutment placement",
+      "Custom crown fabrication",
+      "Lifetime maintenance"
+    ]
+  }
+};
+
+export const DOCTORS = [
+  {
+    id: 1,
+    name: "Dr. Rajesh Mulchandani",
+    title: "Chief Dental Surgeon",
+    specialty: "Orthodontics, Implantology, Full-mouth Rehabilitation",
+    qualifications: ["BDS", "MDS (Orthodontics)", "Fellowship in Implantology (Germany)"],
+    experience: "15+ Years",
+    bio: "Dr. Mulchandani is a renowned dental surgeon practicing in Jabalpur with over 15 years of experience. He specializes in complex implantology cases, full-mouth rehabilitation and painless dental procedures. Together with a team of specialists, we deliver world-class dentistry rooted in compassion, precision and modern technology.",
+    image: "/images/doctor-rajesh.png",
+    certifications: [
+      "BDS",
+      "Fellowship in Implantology (Germany)",
+      "MDS - Oral & Maxillofacial Surgery",
+      "Implantologist & Maxillofacial Surgeon",
+      "OSHA Certified Sterilization Protocols"
+    ]
+  },
+  {
+    id: 2,
+    name: "Dr. Neha Verma",
+    title: "Cosmetic & Restorative Dentist",
+    specialty: "Cosmetic Dentistry, Smile Design",
+    qualifications: ["BDS", "Advanced Cosmetic Training"],
+    experience: "12+ Years",
+    bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Verma creates beautiful, natural-looking smiles that boost confidence.",
+    image: "/images/doctor-neha.png",
+    certifications: [
+      "Certified Smile Designer",
+      "Expert in Teeth Whitening",
+      "Digital Smile Planning Specialist"
+    ]
+  },
+  {
+    id: 3,
+    name: "Dr. Arjun Singh",
+    title: "Orthodontist & Implant Specialist",
+    specialty: "Orthodontics, Implant Dentistry",
+    qualifications: ["BDS", "MDS (Orthodontics)", "Implant Certification"],
+    experience: "10+ Years",
+    bio: "Dr. Singh specializes in modern orthodontics and dental implants. He combines cutting-edge technology with compassionate care to deliver outstanding results.",
+    image: "/images/doctor-arjun.png",
+    certifications: [
+      "BDS, MDS Orthodontics",
+      "ITI Implant Specialist",
+      "Digital Imaging Expert"
+    ]
+  }
+];
+
+export const TESTIMONIALS = [
+  {
+    name: "Rajesh Kumar",
+    treatment: "Dental Braces",
+    rating: 5,
+    text: "Dr. Mulchandani gave me the smile I always wanted. The treatment was painless and the results exceeded my expectations.",
+    image: "/testimonial-1.jpg"
+  },
+  {
+    name: "Priya Patel",
+    treatment: "Invisalign",
+    rating: 5,
+    text: "Amazing experience! The clear aligners were so convenient and nobody knew I was getting treatment. Highly recommend!",
+    image: "/testimonial-2.jpg"
+  },
+  {
+    name: "Amit Singh",
+    treatment: "Dental Implants",
+    rating: 5,
+    text: "The implant procedure was smooth and professional. I got my confidence back. The team is wonderful!",
+    image: "/testimonial-3.jpg"
+  },
+  {
+    name: "Neha Gupta",
+    treatment: "Smile Makeover",
+    rating: 5,
+    text: "My smile transformation has changed my life. Dr. Sharma's cosmetic work is exceptional. Thank you!",
+    image: "/testimonial-4.jpg"
+  }
+];
+
+export const WHY_CHOOSE_US = [
+  {
+    title: "Painless Procedures",
+    description: "Advanced anesthesia & laser tools for a comfortable visit.",
+    icon: "💖"
+  },
+  {
+    title: "Specialist Team",
+    description: "In-house orthodontists, endodontists and implantologists.",
+    icon: "👥"
+  },
+  {
+    title: "International Standards",
+    description: "OSHA-compliant sterilization & ISO-certified workflows.",
+    icon: "🏆"
+  },
+  {
+    title: "Affordable & Transparent",
+    description: "Honest pricing, EMI options, no hidden charges.",
+    icon: "💼"
+  },
+  {
+    title: "State-of-the-Art Setup",
+    description: "Digital dentistry suite with the latest technology.",
+    icon: "⚙️"
+  },
+  {
+    title: "24×7 Emergency Care",
+    description: "Round-the-clock support for dental emergencies.",
+    icon: "⏰"
+  }
+];
+
+export const TECHNOLOGIES = [
+  {
+    name: "Digital OPG & CBCT",
+    description: "3D radiographs for precise diagnosis and treatment planning."
+  },
+  {
+    name: "Laser Dentistry",
+    description: "Minimally invasive procedures with faster healing."
+  },
+  {
+    name: "Intra-Oral Scanner",
+    description: "Digital impressions — no messy moulds, more accurate."
+  },
+  {
+    name: "Rotary Endodontics",
+    description: "Single-sitting root canals with the latest endo motors."
+  },
+  {
+    name: "Digital Smile Design",
+    description: "Preview your new smile before treatment begins."
+  },
+  {
+    name: "Autoclave Sterilization",
+    description: "Hospital-grade infection control, every single time."
+  }
+];
+
+export const GALLERY_IMAGES = [
+  { id: 1, category: "braces", before: "/before-braces-1.jpg", after: "/after-braces-1.jpg", title: "Severe Crowding Correction" },
+  { id: 2, category: "implants", before: "/before-implant-1.jpg", after: "/after-implant-1.jpg", title: "Missing Tooth Replacement" },
+  { id: 3, category: "cosmetic", before: "/before-cosmetic-1.jpg", after: "/after-cosmetic-1.jpg", title: "Smile Whitening & Makeover" },
+  { id: 4, category: "braces", before: "/before-braces-2.jpg", after: "/after-braces-2.jpg", title: "Bite Correction" },
+  { id: 5, category: "invisalign", before: "/before-invisalign-1.jpg", after: "/after-invisalign-1.jpg", title: "Discreet Alignment" },
+  { id: 6, category: "cosmetic", before: "/before-cosmetic-2.jpg", after: "/after-cosmetic-2.jpg", title: "Full Mouth Rehabilitation" }
+];
+
+export const BLOG_POSTS = [
+  {
+    id: 1,
+    title: "Benefits of Invisalign: Why Choose Clear Aligners",
+    excerpt: "Discover why Invisalign is the perfect choice for modern orthodontics...",
+    date: "2024-06-15",
+    author: "Dr. Mulchandani",
+    category: "Invisalign"
+  },
+  {
+    id: 2,
+    title: "The Future of Dental Implants",
+    excerpt: "Learn about the latest advancements in dental implant technology...",
+    date: "2024-06-10",
+    author: "Dr. Sharma",
+    category: "Implants"
+  },
+  {
+    id: 3,
+    title: "Smile Makeover: 5 Transformative Cosmetic Procedures",
+    excerpt: "Transform your smile with these proven cosmetic dental treatments...",
+    date: "2024-06-05",
+    author: "Dr. Sharma",
+    category: "Cosmetic"
+  }
+];
+
+export const FAQ = [
+  {
+    question: "Is the treatment at Advanced Dental really painless?",
+    answer: "Yes. We use modern anesthesia techniques, laser dentistry and gentle hands-on approach. Most patients report zero to minimal discomfort during procedures including extractions and root canals."
+  },
+  {
+    question: "How much does a dental implant cost in Jabalpur?",
+    answer: "Implant costs vary based on complexity and quality of materials. We offer transparent pricing and flexible EMI options. Call us for a customized quote after consultation."
+  },
+  {
+    question: "Do you provide Invisalign treatment?",
+    answer: "Yes. We are a certified Invisalign provider with extensive experience. We use the latest digital scanning and treatment planning for optimal results."
+  },
+  {
+    question: "How long does a root canal take?",
+    answer: "Most root canals can be completed in a single sitting (45-60 minutes) with our advanced rotary endodontics equipment."
+  },
+  {
+    question: "Is the clinic sterilized properly?",
+    answer: "Yes. We follow OSHA-compliant sterilization protocols with medical-grade autoclaves, UV chambers and strict infection control measures."
+  },
+  {
+    question: "Do you treat children?",
+    answer: "Yes. We have a dedicated pediatric dentistry section with child-friendly environment and gentle techniques for kids of all ages."
+  },
+  {
+    question: "What are the clinic timings?",
+    answer: "Mon - Sat: 10:00 AM - 8:30 PM. We are closed on Sundays. For emergencies, call 24×7 helpline."
+  },
+  {
+    question: "Do you accept insurance?",
+    answer: "We accept most major insurance plans. Consult our team for coverage details. We also offer direct payment, card, and EMI options."
+  }
+];
+
+export const CONTACT_FORM_FIELDS = [
+  { name: "name", label: "Full Name", type: "text", required: true },
+  { name: "email", label: "Email Address", type: "email", required: true },
+  { name: "phone", label: "Phone Number", type: "tel", required: true },
+  { name: "subject", label: "Subject", type: "select", options: ["Consultation", "Braces", "Invisalign", "Implants", "Cosmetic", "Other"], required: true },
+  { name: "message", label: "Message", type: "textarea", required: true }
+];
