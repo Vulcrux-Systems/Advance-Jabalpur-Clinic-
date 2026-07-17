@@ -5,13 +5,14 @@ import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
 import PageBanner from '@/components/shared/PageBanner'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const galleryItems = [
-    { id: 1, category: 'braces', title: 'Orthodontic Transformation', before: '/gallery/braces-before.jpg', after: '/gallery/braces-after.jpg' },
-    { id: 2, category: 'implants', title: 'Dental Implant Case', before: '/gallery/implant-before.jpg', after: '/gallery/implant-after.jpg' },
+    { id: 1, category: 'braces', title: 'Orthodontic Correction', before: '/images/case-before-1.png', after: '/images/case-after-1.png' },
+    { id: 2, category: 'whitening', title: 'Professional Whitening', before: '/images/IMG_7078.JPG.jpeg', after: '/images/treatment-whitening.png' },
     { id: 3, category: 'cosmetic', title: 'Smile Makeover', before: '/gallery/cosmetic-before.jpg', after: '/gallery/cosmetic-after.jpg' },
     { id: 4, category: 'braces', title: 'Complex Case Resolution', before: '/gallery/braces2-before.jpg', after: '/gallery/braces2-after.jpg' },
     { id: 5, category: 'whitening', title: 'Professional Whitening', before: '/gallery/whiten-before.jpg', after: '/gallery/whiten-after.jpg' },
@@ -20,8 +21,8 @@ export default function GalleryPage() {
 
   const categories = ['all', 'braces', 'implants', 'cosmetic', 'whitening'];
 
-  const filteredItems = selectedCategory === 'all' 
-    ? galleryItems 
+  const filteredItems = selectedCategory === 'all'
+    ? galleryItems
     : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
@@ -29,7 +30,7 @@ export default function GalleryPage() {
       <TopBar />
       <Navbar />
 
-      <PageBanner 
+      <PageBanner
         title="Treatment Results & Gallery"
         subtitle="See the transformations we've created for our patients"
         breadcrumb={[{ label: 'Gallery' }]}
@@ -44,11 +45,10 @@ export default function GalleryPage() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-6 py-2 rounded-lg font-semibold capitalize transition ${
-                    selectedCategory === cat
+                  className={`px-6 py-2 rounded-lg font-semibold capitalize transition ${selectedCategory === cat
                       ? 'bg-[#F26522] text-white'
                       : 'bg-[#F8FAFC] text-[#0F172A] hover:bg-[#E2E8F0]'
-                  }`}
+                    }`}
                 >
                   {cat === 'all' ? 'All Results' : cat}
                 </button>

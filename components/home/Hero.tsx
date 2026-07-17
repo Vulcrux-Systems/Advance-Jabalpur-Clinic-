@@ -25,6 +25,14 @@ export function Hero() {
     },
   }
 
+  const clinicInfo = {
+    stats: {
+      patients: "10,000+",
+      experience: "20",
+      rating: "4.9"
+    }
+  }
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-teal-50 pt-32 pb-20 relative overflow-hidden">
       {/* Decorative elements */}

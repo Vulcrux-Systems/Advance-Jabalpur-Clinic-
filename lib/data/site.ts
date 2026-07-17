@@ -334,7 +334,7 @@ export const DOCTORS = [
       "BDS, MDS Orthodontics",
       "ITI Implant Specialist",
       "Digital Imaging Expert"
-    ]
+    ]  
   }
 ];
 

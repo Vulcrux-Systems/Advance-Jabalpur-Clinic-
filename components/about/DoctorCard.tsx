@@ -1,20 +1,23 @@
 'use client'
 
 import Image from 'next/image'
+import Marquee from 'react-fast-marquee'
 
 interface DoctorCardProps {
-  id: string
+  id: string | number
   name: string
   title: string
   qualifications: string[]
   image?: string
+  certifications?: string[]
 }
 
 export default function DoctorCard({
   name,
   title,
   qualifications,
-  image
+  image,
+  certifications
 }: DoctorCardProps) {
   return (
     <div className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden hover:shadow-xl transition">
@@ -43,6 +46,19 @@ export default function DoctorCard({
             </p>
           ))}
         </div>
+        
+        {certifications && certifications.length > 0 && (
+          <div className="mt-6 pt-4 border-t border-[#E2E8F0]">
+            <p className="text-xs text-[#0F4C81] font-bold uppercase mb-3 text-center tracking-wider">Certifications & Expertise</p>
+            <Marquee speed={30} gradient={true} gradientColor="white" gradientWidth={20} className="py-1 overflow-hidden">
+              {certifications.map((cert, idx) => (
+                <span key={idx} className="mx-3 text-xs font-semibold bg-[#E8F5FF] text-[#0F172A] px-3 py-1.5 rounded-full whitespace-nowrap shadow-sm border border-[#bae6fd]">
+                  🏆 {cert}
+                </span>
+              ))}
+            </Marquee>
+          </div>
+        )}
       </div>
     </div>
   )

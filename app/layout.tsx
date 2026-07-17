@@ -2,6 +2,8 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Inter } from 'next/font/google'
 import './globals.css'
+import WhatsAppButton from '@/components/shared/WhatsAppButton'
+import CallButton from '@/components/shared/CallButton'
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: '--font-jakarta',
@@ -57,6 +59,8 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         {children}
+        <WhatsAppButton />
+        <CallButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

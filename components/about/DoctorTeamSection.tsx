@@ -25,6 +25,7 @@ export default function DoctorTeamSection() {
               title={doctor.title}
               qualifications={doctor.qualifications}
               image={doctor.image}
+              certifications={doctor.certifications}
             />
           ))}
         </div>
