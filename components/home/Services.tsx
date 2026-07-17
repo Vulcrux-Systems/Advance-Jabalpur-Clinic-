@@ -6,10 +6,12 @@ import Image from 'next/image'
 import { services } from '@/lib/data/services'
 
 const serviceImages: Record<string, string> = {
-  orthodontics: '/images/orthodontics.png',
-  implants: '/images/implants.png',
-  cosmetic: '/images/cosmetic.png',
-  invisalign: '/images/invisalign.png',
+  'orthodontics': '/images/treatment-orthodontics.png',
+  'implants': '/images/treatment-implants.png',
+  'cosmetic': '/images/treatment-cosmetic.png',
+  'periodontics': '/images/treatment-root-canal.png',
+  'restorative': '/images/treatment-whitening.png',
+  'preventive': '/images/clinic-consultation.png',
 }
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -42,7 +44,7 @@ export function Services() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-32 bg-gray-50">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div
@@ -77,38 +79,39 @@ export function Services() {
               variants={cardVariants}
               className="group cursor-pointer"
             >
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:border-blue-200 transition-all duration-300 hover:shadow-lg h-full overflow-hidden flex flex-col">
-                {/* Image Section */}
-                <div className="relative h-48 bg-gray-200 overflow-hidden">
-                  {serviceImages[service.id as keyof typeof serviceImages] && (
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full transform hover:-translate-y-1">
+                {/* Image Section (16:9 Ratio) */}
+                <div className="relative w-full aspect-video bg-gray-200 overflow-hidden">
+                  {serviceImages[service.id as keyof typeof serviceImages] ? (
                     <Image
                       src={serviceImages[service.id as keyof typeof serviceImages]}
                       alt={service.title}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
                     />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-400">
+                      Image
+                    </div>
                   )}
                 </div>
 
                 {/* Content Section */}
-                <div className="p-8 flex-1 flex flex-col">
-                  {/* Icon */}
-                  <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                    {iconMap[service.icon]}
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <div className="p-6 flex-1 flex flex-col">
+                  {/* Title */}
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed flex-1">
+                  
+                  {/* Description */}
+                  <p className="text-gray-600 mb-6 text-sm leading-relaxed flex-1">
                     {service.description}
                   </p>
 
-                  {/* Link */}
-                  <div className="flex items-center gap-2 text-blue-600 font-semibold group-hover:gap-3 transition-all">
+                  {/* Learn More Link */}
+                  <div className="flex items-center gap-2 text-blue-600 font-semibold text-sm group-hover:gap-3 transition-all mt-auto">
                     <span>Learn More</span>
-                    <ArrowRight size={18} />
+                    <ArrowRight size={16} />
                   </div>
                 </div>
               </div>

@@ -39,7 +39,7 @@ export function WhyChooseUs() {
             {/* Image Container */}
             <div className="relative flex-grow min-h-[400px] rounded-[2rem] overflow-hidden mt-auto">
               <Image 
-                src="/images/clinic-setup.jpg" 
+                src="/images/IMG_7043.JPG.jpeg" 
                 alt="Modern Clinical Setup" 
                 fill 
                 className="object-cover bg-gray-200"
@@ -58,20 +58,39 @@ export function WhyChooseUs() {
               {WHY_CHOOSE_US.map((feature, idx) => (
                 <div
                   key={idx}
-                  className="group bg-white border border-[#E2E8F0] rounded-[2rem] p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  className={`group relative border border-[#E2E8F0] rounded-[2rem] overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${
+                    feature.image ? 'min-h-[250px] flex flex-col justify-end p-8 border-none' : 'bg-white p-8'
+                  }`}
                 >
-                  {/* Icon container with hover effect */}
-                  <div className="w-12 h-12 bg-[#FFF0E8] text-[#F26522] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#F26522] group-hover:text-white transition-colors duration-300">
-                    {getIcon(feature.title)}
-                  </div>
+                  {/* Optional Background Image */}
+                  {feature.image && (
+                    <>
+                      <Image 
+                        src={feature.image} 
+                        alt={feature.title} 
+                        fill 
+                        className="object-cover z-0 transition-transform duration-700 group-hover:scale-105" 
+                      />
+                      <div className="absolute inset-0 z-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/40 to-transparent mix-blend-multiply" />
+                    </>
+                  )}
 
-                  {/* Content */}
-                  <h3 className="text-xl font-bold text-[#0F172A] mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-[#64748B] text-sm leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <div className="relative z-10">
+                    {/* Icon container */}
+                    {!feature.image && (
+                      <div className="w-12 h-12 bg-[#FFF0E8] text-[#F26522] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#F26522] group-hover:text-white transition-colors duration-300">
+                        {getIcon(feature.title)}
+                      </div>
+                    )}
+
+                    {/* Content */}
+                    <h3 className={`text-xl font-bold mb-3 ${feature.image ? 'text-white drop-shadow-md' : 'text-[#0F172A]'}`}>
+                      {feature.title}
+                    </h3>
+                    <p className={`text-sm leading-relaxed ${feature.image ? 'text-white/90 drop-shadow-sm' : 'text-[#64748B]'}`}>
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

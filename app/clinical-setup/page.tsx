@@ -25,7 +25,7 @@ export default function ClinicalSetupPage() {
       <PageBanner 
         title="Clinical Setup & Technology"
         subtitle="State-of-the-art infrastructure meeting international standards"
-        breadcrumb={[{ label: 'Clinical Setup' }]}
+        bgImage="/images/IMG_7040.JPG.jpeg"
       />
 
       <main>
@@ -37,14 +37,32 @@ export default function ClinicalSetupPage() {
               <p className="text-lg text-[#475569]">German and Swiss equipment for precise diagnosis and treatment</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {TECHNOLOGIES.map((tech, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-white to-[#F8FAFC] p-8 rounded-xl border border-[#E2E8F0] hover:shadow-lg transition">
-                  <div className="w-12 h-12 rounded-lg bg-[#F26522]/10 flex items-center justify-center mb-4">
-                    <Zap size={24} className="text-[#F26522]" />
+                <div key={idx} className="bg-white rounded-2xl border border-[#E2E8F0] overflow-hidden hover:-translate-y-2 hover:shadow-xl hover:shadow-[#0F4C81]/10 transition-all duration-300 flex flex-col">
+                  {/* Image Container with aspect ratio, object-fit */}
+                  {tech.image && (
+                    <div className="w-full relative aspect-[4/3] overflow-hidden">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={tech.image}
+                        alt={tech.name}
+                        loading="lazy"
+                        className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
+                  
+                  {/* Content */}
+                  <div className="p-6 md:p-8 flex flex-col flex-grow">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-xl bg-[#F26522]/10 flex items-center justify-center shrink-0">
+                        <Zap size={24} className="text-[#F26522]" />
+                      </div>
+                      <h3 className="text-xl font-bold text-[#0F172A] leading-tight">{tech.name}</h3>
+                    </div>
+                    <p className="text-[#475569] text-base leading-relaxed">{tech.description}</p>
                   </div>
-                  <h3 className="text-xl font-bold text-[#0F172A] mb-2">{tech.name}</h3>
-                  <p className="text-[#475569] text-sm">{tech.description}</p>
                 </div>
               ))}
             </div>

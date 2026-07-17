@@ -1,19 +1,21 @@
 'use client'
 
+import Image from 'next/image';
+
 export default function MissionVisionValuesSection() {
   const cards = [
     {
-      icon: '🎯',
+      image: '/images/IMG_7047.JPG.jpeg',
       title: 'Our Mission',
       desc: 'To deliver world-class dental care that is painless, ethical and affordable for every patient that walks through our doors.'
     },
     {
-      icon: '👁️',
+      image: '/images/IMG_7043.JPG.jpeg',
       title: 'Our Vision',
       desc: 'To be central India\'s most trusted dental hospital — a benchmark for clinical excellence and patient experience.'
     },
     {
-      icon: '💖',
+      image: '/images/IMG_7086.JPG.jpeg',
       title: 'Our Values',
       desc: 'Integrity, compassion, precision and a relentless commitment to continuous learning and patient comfort.'
     }
@@ -26,13 +28,23 @@ export default function MissionVisionValuesSection() {
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-white border border-[#E2E8F0] rounded-2xl p-8 hover:shadow-lg transition"
+              className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition duration-300 flex flex-col"
             >
-              <div className="w-16 h-16 bg-[#E8F5FF] rounded-2xl flex items-center justify-center mb-6">
-                <span className="text-3xl">{card.icon}</span>
+              {/* Image Container */}
+              <div className="w-full h-56 relative bg-gray-100">
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
-              <h3 className="text-2xl font-bold text-[#0F172A] mb-3">{card.title}</h3>
-              <p className="text-[#475569]">{card.desc}</p>
+              
+              {/* Content */}
+              <div className="p-8 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold text-[#0F172A] mb-3">{card.title}</h3>
+                <p className="text-[#475569] leading-relaxed">{card.desc}</p>
+              </div>
             </div>
           ))}
         </div>

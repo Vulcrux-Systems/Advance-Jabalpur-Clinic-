@@ -37,7 +37,7 @@ export default function ContactPage() {
       <PageBanner 
         title="Contact Us"
         subtitle="Get in touch with our team for any queries or to book an appointment"
-        breadcrumb={[{ label: 'Contact' }]}
+        bgImage="/images/IMG_7008.JPG.jpeg"
       />
 
       <main>

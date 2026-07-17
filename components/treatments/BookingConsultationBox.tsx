@@ -9,28 +9,28 @@ interface BookingConsultationBoxProps {
 
 export default function BookingConsultationBox({ treatmentName }: BookingConsultationBoxProps) {
   return (
-    <div className="sticky top-24 bg-[#0F4C81] text-white rounded-2xl p-8">
-      <h3 className="text-2xl font-black mb-4">Book a Consultation</h3>
-      <p className="text-white/90 mb-8">
+    <div className="sticky top-24 bg-[#0F4C81] text-white rounded-2xl p-[1.625rem]">
+      <h3 className="text-xl md:text-2xl font-black mb-3">Book a Consultation</h3>
+      <p className="text-sm md:text-base text-white/90 mb-5">
         Speak to a specialist about your {treatmentName} needs.
       </p>
 
-      <Link href="/contact" className="block bg-[#F26522] text-white px-6 py-3 rounded-lg font-bold text-center hover:bg-[#E55A1A] transition mb-4">
+      <Link href="/contact" className="block bg-[#F26522] text-white px-5 py-2.5 rounded-lg font-bold text-center text-sm hover:bg-[#E55A1A] transition mb-3">
         Book Appointment
       </Link>
 
-      <p className="text-center text-white/80 mb-6">Or call us</p>
-      <a href={`tel:${CLINIC.phoneRaw}`} className="block text-center text-[#F26522] font-bold mb-8">
+      <p className="text-center text-xs md:text-sm text-white/80 mb-1.5">Or call us</p>
+      <a href={`tel:${CLINIC.phoneRaw}`} className="block text-center text-[#F26522] font-bold text-lg md:text-xl mb-5">
         {CLINIC.phone}
       </a>
 
       {/* Duration */}
-      <div className="border-t border-white/20 pt-6">
+      <div className="border-t border-white/20 pt-4">
         <div className="flex items-start gap-3">
-          <span className="text-2xl">⏱️</span>
+          <span className="text-xl">⏱️</span>
           <div>
-            <p className="font-bold mb-2">Duration</p>
-            <p className="text-sm text-white/80">
+            <p className="font-bold text-sm md:text-base mb-1">Duration</p>
+            <p className="text-xs md:text-sm text-white/80 leading-relaxed">
               Most {treatmentName} procedures are completed in 1-3 visits depending on complexity.
             </p>
           </div>
@@ -38,11 +38,11 @@ export default function BookingConsultationBox({ treatmentName }: BookingConsult
       </div>
 
       {/* Why Choose Us */}
-      <div className="border-t border-white/20 mt-6 pt-6">
-        <p className="font-bold mb-4 flex items-center gap-2">
+      <div className="border-t border-white/20 mt-4 pt-4">
+        <p className="font-bold text-sm md:text-base mb-3 flex items-center gap-2">
           <span>❤️</span> Why Choose Us
         </p>
-        <ul className="space-y-3 text-sm">
+        <ul className="space-y-2.5 text-xs md:text-sm">
           <li className="flex gap-2">
             <span className="text-[#FFB88C]">✓</span>
             <span>15+ years of specialist expertise</span>

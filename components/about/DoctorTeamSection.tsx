@@ -20,7 +20,7 @@ export default function DoctorTeamSection() {
           {DOCTORS.map((doctor) => (
             <DoctorCard
               key={doctor.id}
-              id={doctor.id}
+              id={String(doctor.id)}
               name={doctor.name}
               title={doctor.title}
               qualifications={doctor.qualifications}
