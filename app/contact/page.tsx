@@ -41,19 +41,6 @@ export default function ContactPage() {
       />
 
       <main>
-        {/* Google Maps */}
-        <section className="h-96 bg-gray-200">
-          <iframe
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Dr.+Mulchandani's+Ranjhi+Dental+Clinic,+Jabalpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          />
-        </section>
-
         {/* Contact Info & Form */}
         <section className="py-20 md:py-32 bg-white">
           <div className="max-w-7xl mx-auto px-6">
@@ -200,6 +187,19 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Google Maps */}
+        <section className="h-96 bg-gray-200">
+          <iframe
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            referrerPolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Dr.+Mulchandani's+Ranjhi+Dental+Clinic,+Jabalpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          />
         </section>
       </main>
 
