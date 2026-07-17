@@ -4,24 +4,25 @@ import Link from 'next/link'
 
 export default function AboutHeroSection() {
   return (
-    <section className="relative bg-gradient-to-r from-[#E8B8A0] via-[#0F4C81] to-[#6BA3D4] pt-20 pb-32 md:pt-32 md:pb-40 overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-20 left-40 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-      </div>
+    <section className="relative pt-32 pb-20 md:pt-36 md:pb-28 overflow-hidden bg-[#0F172A]">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 hover:scale-105"
+        style={{ backgroundImage: "url('/images/IMG_7001.JPG.jpeg')" }}
+      />
+      
+      {/* Premium Dark/Blue Overlay for Readability */}
+      <div className="absolute inset-0 z-0 bg-[#0F4C81]/70 mix-blend-multiply"></div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/60 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <nav className="flex items-center gap-2 text-white/80 mb-8">
-          <Link href="/" className="hover:text-white transition">Home</Link>
-          <span>&gt;</span>
-          <span>About</span>
-        </nav>
 
-        <h1 className="text-5xl md:text-6xl font-black text-[#0F172A] mb-4 leading-tight">
+
+        <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight drop-shadow-lg">
           A premier dental hospital,<br />
           built around <span className="text-[#F26522]">your comfort</span>.
         </h1>
-        <p className="text-lg text-[#475569] max-w-3xl">
+        <p className="text-xl text-blue-50 max-w-2xl leading-relaxed drop-shadow-md font-medium">
           Dr. Mulchandani&apos;s Advanced Ranjhi Dental Hospital is Jabalpur&apos;s destination for painless, modern and ethical dentistry — serving thousands of families since 2009.
         </p>
       </div>

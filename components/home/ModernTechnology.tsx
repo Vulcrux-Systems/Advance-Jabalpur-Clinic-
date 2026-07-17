@@ -33,24 +33,39 @@ export default function ModernTechnology() {
         </div>
 
         {/* Technology cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {TECHNOLOGIES.map((tech, idx) => (
             <div
               key={idx}
-              className="bg-[#1A5C94] border border-[#2A6CA4] rounded-3xl p-8 hover:-translate-y-1 transition-transform duration-300"
+              className="bg-[#1A5C94] border border-[#2A6CA4] rounded-[20px] overflow-hidden shadow-md hover:-translate-y-2 hover:shadow-xl hover:shadow-[#0a3156]/50 transition-all duration-300 group flex flex-col"
             >
-              {/* Icon container */}
-              <div className="w-14 h-14 bg-[#F26522] rounded-2xl flex items-center justify-center mb-6 text-white">
-                {getTechIcon(tech.name)}
-              </div>
-
+              {/* Image Container with fixed height (260px), rounded corners (20px), object-fit */}
+              {tech.image && (
+                <div className="w-full relative h-[260px] overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={tech.image}
+                    alt={tech.name}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              )}
+              
               {/* Content */}
-              <h3 className="text-xl font-bold text-white mb-3">
-                {tech.name}
-              </h3>
-              <p className="text-blue-100/80 leading-relaxed text-base">
-                {tech.description}
-              </p>
+              <div className="p-6 md:p-8 flex flex-col flex-grow">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 shrink-0 bg-[#F26522] rounded-xl flex items-center justify-center text-white shadow-lg">
+                    {getTechIcon(tech.name)}
+                  </div>
+                  <h3 className="text-xl font-bold text-white leading-tight">
+                    {tech.name}
+                  </h3>
+                </div>
+                <p className="text-blue-100/90 leading-relaxed text-base">
+                  {tech.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

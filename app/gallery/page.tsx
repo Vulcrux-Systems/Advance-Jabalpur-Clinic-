@@ -10,9 +10,9 @@ export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const galleryItems = [
-    { id: 1, category: 'braces', title: 'Orthodontic Transformation', before: '/gallery/braces-before.jpg', after: '/gallery/braces-after.jpg' },
-    { id: 2, category: 'implants', title: 'Dental Implant Case', before: '/gallery/implant-before.jpg', after: '/gallery/implant-after.jpg' },
-    { id: 3, category: 'cosmetic', title: 'Smile Makeover', before: '/gallery/cosmetic-before.jpg', after: '/gallery/cosmetic-after.jpg' },
+    { id: 1, category: 'braces', title: 'Orthodontic Transformation', image: '/images/case-before-1.png' },
+    { id: 2, category: 'implants', title: 'Dental Implant Case', image: '/images/implants.png' },
+    { id: 3, category: 'cosmetic', title: 'Smile Makeover', image: '/images/IMG_7078.JPG.jpeg' },
     { id: 4, category: 'braces', title: 'Complex Case Resolution', before: '/gallery/braces2-before.jpg', after: '/gallery/braces2-after.jpg' },
     { id: 5, category: 'whitening', title: 'Professional Whitening', before: '/gallery/whiten-before.jpg', after: '/gallery/whiten-after.jpg' },
     { id: 6, category: 'implants', title: 'Full Mouth Implants', before: '/gallery/implants-before.jpg', after: '/gallery/implants-after.jpg' },
@@ -60,12 +60,16 @@ export default function GalleryPage() {
               {filteredItems.map((item) => (
                 <div key={item.id} className="bg-white rounded-xl overflow-hidden border border-[#E2E8F0] hover:shadow-lg transition">
                   <div className="aspect-square bg-[#F8FAFC] relative overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-[#0F4C81] to-[#1B5FA0] flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="text-5xl mb-2">📸</div>
-                        <p className="text-white text-sm">Before & After</p>
+                    {item.image ? (
+                      <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-[#0F4C81] to-[#1B5FA0] flex items-center justify-center">
+                        <div className="text-center">
+                          <div className="text-5xl mb-2">📸</div>
+                          <p className="text-white text-sm">Before & After</p>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                   <div className="p-6">
                     <p className="text-sm text-[#F26522] font-bold mb-2 capitalize">{item.category}</p>

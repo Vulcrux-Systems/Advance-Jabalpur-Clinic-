@@ -13,6 +13,7 @@ import FAQSection from '@/components/home/FAQSection'
 import CTASection from '@/components/home/CTASection'
 import { TREATMENTS } from '@/lib/data/site'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -49,15 +50,27 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {TREATMENTS.map((treatment) => (
-                <div key={treatment.id} className="group bg-white rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <div className="w-14 h-14 bg-[#F0F5FF] text-[#0F4C81] rounded-2xl flex items-center justify-center mb-8 text-2xl group-hover:scale-110 transition-transform">
-                    {treatment.icon}
+                <div key={treatment.id} className="group bg-white rounded-3xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden flex flex-col h-full">
+                  {/* Image Section (16:9 Ratio) */}
+                  <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
+                    {treatment.image && (
+                      <Image
+                        src={treatment.image}
+                        alt={treatment.name}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500 ease-in-out"
+                      />
+                    )}
                   </div>
-                  <h3 className="text-2xl font-bold text-[#0F172A] mb-3">{treatment.name}</h3>
-                  <p className="text-[#475569] text-base leading-relaxed mb-8">{treatment.shortDesc}</p>
-                  <Link href={`/treatments/${treatment.id}`} className="text-[#F26522] font-semibold text-lg hover:underline flex items-center gap-2">
-                    Learn more <span>→</span>
-                  </Link>
+                  
+                  {/* Content Section */}
+                  <div className="p-8 flex-1 flex flex-col">
+                    <h3 className="text-2xl font-bold text-[#0F172A] mb-3 group-hover:text-[#0F4C81] transition-colors">{treatment.name}</h3>
+                    <p className="text-[#475569] text-base leading-relaxed mb-6 flex-1">{treatment.shortDesc}</p>
+                    <Link href={`/treatments/${treatment.id}`} className="text-[#F26522] font-semibold text-lg hover:underline flex items-center gap-2 mt-auto">
+                      Learn more <span>→</span>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>

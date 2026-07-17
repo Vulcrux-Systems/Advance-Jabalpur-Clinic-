@@ -17,6 +17,11 @@ export const CLINIC = {
   emergency: "24×7 Emergency",
   whatsapp: "+91 90989 12345",
   googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.5638404117526!2d79.193...placeholder",
+  stats: {
+    patients: "10,000+",
+    experience: "15",
+    rating: "4.9"
+  }
 };
 
 export const TRUST_BADGES = [
@@ -123,7 +128,7 @@ export const TREATMENTS = [
     icon: "🌱",
     shortDesc: "Gum health and implantology",
     fullDesc: "Specialized treatment for gum diseases and comprehensive implant dentistry solutions.",
-    image: "/images/treatment-root-canal.png",
+    image: "/images/IMG_7096.JPG.jpeg",
     services: [
       { name: "Gum Treatment", desc: "Cure gingivitis and periodontitis" },
       { name: "Scaling & Root Planing", desc: "Deep cleaning for gum health" },
@@ -297,7 +302,8 @@ export const DOCTORS = [
     qualifications: ["BDS", "MDS (Orthodontics)", "Fellowship in Implantology (Germany)"],
     experience: "15+ Years",
     bio: "Dr. Mulchandani is a renowned dental surgeon practicing in Jabalpur with over 15 years of experience. He specializes in complex implantology cases, full-mouth rehabilitation and painless dental procedures. Together with a team of specialists, we deliver world-class dentistry rooted in compassion, precision and modern technology.",
-    image: "/images/doctor-rajesh.png",
+    image: "/images/IMG_7025.JPG.jpeg",
+    imagePosition: "object-[center_15%]",
     certifications: [
       "BDS",
       "Fellowship in Implantology (Germany)",
@@ -314,7 +320,8 @@ export const DOCTORS = [
     qualifications: ["BDS", "Advanced Cosmetic Training"],
     experience: "12+ Years",
     bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Verma creates beautiful, natural-looking smiles that boost confidence.",
-    image: "/images/doctor-neha.png",
+    image: "/images/IMG_7106.JPG.jpeg",
+    imagePosition: "object-[center_45%]",
     certifications: [
       "Certified Smile Designer",
       "Expert in Teeth Whitening",
@@ -373,59 +380,71 @@ export const WHY_CHOOSE_US = [
   {
     title: "Painless Procedures",
     description: "Advanced anesthesia & laser tools for a comfortable visit.",
-    icon: "💖"
+    icon: "💖",
+    image: "/images/IMG_7051.JPG.jpeg"
   },
   {
     title: "Specialist Team",
     description: "In-house orthodontists, endodontists and implantologists.",
-    icon: "👥"
+    icon: "👥",
+    image: "/images/IMG_7068.JPG.jpeg"
   },
   {
     title: "International Standards",
     description: "OSHA-compliant sterilization & ISO-certified workflows.",
-    icon: "🏆"
+    icon: "🏆",
+    image: "/images/IMG_7071.JPG.jpeg"
   },
   {
     title: "Affordable & Transparent",
     description: "Honest pricing, EMI options, no hidden charges.",
-    icon: "💼"
+    icon: "💼",
+    image: "/images/IMG_7130.JPG.jpeg"
   },
   {
     title: "State-of-the-Art Setup",
     description: "Digital dentistry suite with the latest technology.",
-    icon: "⚙️"
+    icon: "⚙️",
+    image: "/images/IMG_7114.JPG.jpeg"
   },
   {
     title: "24×7 Emergency Care",
     description: "Round-the-clock support for dental emergencies.",
-    icon: "⏰"
+    icon: "📞",
+    image: "/images/IMG_7077.JPG.jpeg"
   }
 ];
 
 export const TECHNOLOGIES = [
   {
     name: "Digital OPG & CBCT",
-    description: "3D radiographs for precise diagnosis and treatment planning."
+    description: "3D radiographs for precise diagnosis and treatment planning.",
+    image: "/images/opg_machine_generated.png"
   },
   {
     name: "Laser Dentistry",
-    description: "Minimally invasive procedures with faster healing."
+    description: "Minimally invasive procedures with faster healing.",
+    image: "/images/laser_dentistry_generated.png"
   },
   {
-    name: "Intra-Oral Scanner",
-    description: "Digital impressions — no messy moulds, more accurate."
+    name: "AI Dental Checkup",
+    description: "Fast & contactless digital screening and accurate diagnosis.",
+    image: "/images/ai_scanner_generated.png"
   },
   {
-    name: "Rotary Endodontics",
-    description: "Single-sitting root canals with the latest endo motors."
+    name: "Microscopic Root Canal",
+    description: "Painless single-sitting root canals with advanced magnification.",
+    image: "/images/dental_microscope_generated.png"
   },
   {
     name: "Digital Smile Design",
-    description: "Preview your new smile before treatment begins."
+    description: "Preview your new smile before treatment begins.",
+    image: "/images/smile_design_generated.png"
   },
   {
     name: "Autoclave Sterilization",
-    description: "Hospital-grade infection control, every single time."
+    description: "Hospital-grade infection control, every single time.",
+    image: "/images/IMG_7134.JPG.jpeg"
   }
 ];
 

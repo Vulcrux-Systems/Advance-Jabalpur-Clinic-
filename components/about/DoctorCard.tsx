@@ -19,13 +19,13 @@ export default function DoctorCard({
   return (
     <div className="bg-white border border-[#E2E8F0] rounded-2xl overflow-hidden hover:shadow-xl transition">
       {/* Doctor image or placeholder */}
-      <div className="h-64 bg-gradient-to-br from-[#0F4C81] to-[#6BA3D4] flex items-center justify-center relative overflow-hidden">
+      <div className="h-64 md:h-72 w-full bg-gray-100 relative overflow-hidden rounded-t-2xl">
         {image ? (
           <Image
             src={image}
             alt={name}
             fill
-            className="object-cover"
+            className="object-cover object-center drop-shadow-sm"
           />
         ) : (
           <span className="text-6xl">👨‍⚕️</span>

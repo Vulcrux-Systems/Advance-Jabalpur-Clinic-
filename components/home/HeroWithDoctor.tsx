@@ -21,9 +21,13 @@ export function HeroWithDoctor() {
           {/* Left: Image & Badges */}
           <div className="relative">
             {/* The actual image mask */}
-            <div className="relative h-[600px] rounded-[2.5rem] overflow-hidden bg-gray-200">
-              {/* Image Placeholder */}
-              <div className="absolute inset-0 bg-[#e6ecef]" />
+            <div className="relative h-[500px] lg:h-[600px] rounded-[2.5rem] overflow-hidden bg-gray-100 shadow-2xl border-4 border-white group">
+              <Image
+                src="/images/image copy.png"
+                alt="Dr. Rajesh Mulchandani"
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
             </div>
 
             {/* Top Left Badge */}

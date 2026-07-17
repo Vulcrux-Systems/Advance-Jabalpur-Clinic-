@@ -17,7 +17,10 @@ export default function DoctorsPage() {
       <PageBanner 
         title="Meet Our Expert Doctors"
         subtitle="Highly qualified specialists with international training and experience"
-        breadcrumb={[{ label: 'Doctors' }]}
+        bgImage="/images/IMG_7069.JPG.jpeg"
+        bgPosition="bg-[center_35%]"
+        bgSize="bg-cover scale-[1.15]"
+        contentClassName="translate-y-16 md:translate-y-20"
       />
 
       <main className="bg-white">
@@ -26,7 +29,13 @@ export default function DoctorsPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {DOCTORS.map((doctor) => (
                 <div key={doctor.id} className="bg-gradient-to-br from-white to-[#F8FAFC] rounded-2xl border border-[#E2E8F0] overflow-hidden hover:shadow-xl transition">
-                  <div className="h-64 bg-gradient-to-br from-[#0F4C81] to-[#1B5FA0]"></div>
+                  <div className="h-[350px] md:h-[450px] w-full relative bg-gray-100 overflow-hidden rounded-t-2xl">
+                    <img 
+                      src={doctor.image} 
+                      alt={doctor.name}
+                      className={`w-full h-full object-cover drop-shadow-sm ${(doctor as any).imagePosition || 'object-center'}`}
+                    />
+                  </div>
                   
                   <div className="p-8">
                     <h3 className="text-3xl font-bold text-[#0F172A] mb-2">{doctor.name}</h3>

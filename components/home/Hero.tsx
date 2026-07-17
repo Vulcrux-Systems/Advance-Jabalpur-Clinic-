@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Phone, MessageCircle, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import { CLINIC } from '@/lib/data/site'
 
 export function Hero() {
   const containerVariants = {
@@ -91,15 +92,15 @@ export function Hero() {
             {/* Stats */}
             <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 pt-8">
               <div>
-                <p className="text-2xl font-bold text-gray-900">{clinicInfo.stats.patients}</p>
+                <p className="text-2xl font-bold text-gray-900">{CLINIC.stats.patients}</p>
                 <p className="text-sm text-gray-600">Happy Patients</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-gray-900">{clinicInfo.stats.experience}+</p>
+                <p className="text-2xl font-bold text-gray-900">{CLINIC.stats.experience}+</p>
                 <p className="text-sm text-gray-600">Years Experience</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-gray-900">★ {clinicInfo.stats.rating}</p>
+                <p className="text-2xl font-bold text-gray-900">★ {CLINIC.stats.rating}</p>
                 <p className="text-sm text-gray-600">Google Rating</p>
               </div>
             </motion.div>

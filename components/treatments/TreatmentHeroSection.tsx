@@ -16,13 +16,7 @@ export default function TreatmentHeroSection({ name, description }: TreatmentHer
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <nav className="flex items-center gap-2 text-white/80 mb-8">
-          <Link href="/" className="hover:text-white transition">Home</Link>
-          <span>&gt;</span>
-          <Link href="/treatments" className="hover:text-white transition">Treatments</Link>
-          <span>&gt;</span>
-          <span>{name}</span>
-        </nav>
+
 
         <h1 className="text-5xl md:text-6xl font-black text-[#0F172A] mb-4 leading-tight">
           {name}
