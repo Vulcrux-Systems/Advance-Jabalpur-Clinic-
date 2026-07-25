@@ -225,8 +225,8 @@ export const contactUsContent = {
   contactInfo: {
     name: "Great Lakes Dental Clinic & Orthodontic Centre",
     address: "27, Janak Road\nBehind Lake Mall\nKalighat\nKolkata – 700029\nWest Bengal, India",
-    phones: ["+91 9330153855", "+91 8337098496"],
-    landline: "033 35675767",
+    phones: ["+91 92947 77707"],
+    landline: "",
     email: "dr.abhisek24@gmail.com",
     hours: {
       weekday: "Monday – Saturday: 09:00 AM – 08:00 PM",

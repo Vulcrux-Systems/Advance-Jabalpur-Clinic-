@@ -12,7 +12,7 @@ export default function AboutStorySection() {
             Centre of Clinical Excellence in Jabalpur
           </h2>
           <p className="text-xl text-white/90 leading-relaxed mb-6">
-            Founded in 2009 by Dr. Rajesh Mulchandani, Advanced Dental Hospital was built on a simple promise — dentistry should be painless, transparent and accessible. Today, our multispecialty team of orthodontists, implantologists and cosmetic dentists serves patients from across central India.
+            Founded in 2009 by Dr. Akhilesh Mulchandani, Advanced Dental Hospital was built on a simple promise — dentistry should be painless, transparent and accessible. Today, our multispecialty team of orthodontists, implantologists and cosmetic dentists serves patients from across central India.
           </p>
           <p className="text-xl text-white/90 leading-relaxed">
             We invest continuously in modern technology, sterilization protocols and the comfort of our patients — because every smile deserves world-class care.

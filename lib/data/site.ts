@@ -7,15 +7,15 @@ export const CLINIC = {
   slogan: "Your Smile, Our Priority",
   address: "Main Road, Ranjhi, Jabalpur, Madhya Pradesh 482005",
   addressShort: "Jabalpur, MP",
-  phone: "033 35675767",
-  phoneRaw: "03335675767",
-  phone2: "+91 9330153855",
-  phone3: "+91 8337098496",
+  phone: "+91 92947 77707",
+  phoneRaw: "+919294777707",
+  phone2: "",
+  phone3: "",
   email: "info@advancedentaljabalpur.in",
   website: "www.advanceddentaljabalpur.in",
   hours: "Mon - Sat: 10:00 AM - 8:30 PM",
   emergency: "24×7 Emergency",
-  whatsapp: "+91 90989 12345",
+  whatsapp: "+91 92947 77707",
   googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.5638404117526!2d79.193...placeholder",
   stats: {
     patients: "10,000+",
@@ -296,12 +296,12 @@ export const SERVICES = {
 export const DOCTORS = [
   {
     id: 1,
-    name: "Dr. Rajesh Mulchandani",
+    name: "Dr. Akhilesh Mulchandani",
     title: "Chief Dental Surgeon",
     specialty: "Orthodontics, Implantology, Full-mouth Rehabilitation",
     qualifications: ["BDS", "MDS (Orthodontics)", "Fellowship in Implantology (Germany)"],
     experience: "15+ Years",
-    bio: "Dr. Mulchandani is a renowned dental surgeon practicing in Jabalpur with over 15 years of experience. He specializes in complex implantology cases, full-mouth rehabilitation and painless dental procedures. Together with a team of specialists, we deliver world-class dentistry rooted in compassion, precision and modern technology.",
+    bio: "Dr. Akhilesh Mulchandani is a renowned dental surgeon practicing in Jabalpur with over 15 years of experience. He specializes in complex implantology cases, full-mouth rehabilitation and painless dental procedures. Together with a team of specialists, we deliver world-class dentistry rooted in compassion, precision and modern technology.",
     image: "/images/IMG_7025.JPG.jpeg",
     imagePosition: "object-[center_15%]",
     certifications: [
@@ -314,33 +314,18 @@ export const DOCTORS = [
   },
   {
     id: 2,
-    name: "Dr. Neha Verma",
+    name: "Dr. Priya Mulchandani",
     title: "Cosmetic & Restorative Dentist",
     specialty: "Cosmetic Dentistry, Smile Design",
     qualifications: ["BDS", "Advanced Cosmetic Training"],
     experience: "12+ Years",
-    bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Verma creates beautiful, natural-looking smiles that boost confidence.",
+    bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Priya Mulchandani creates beautiful, natural-looking smiles that boost confidence.",
     image: "/images/IMG_7106.JPG.jpeg",
     imagePosition: "object-[center_45%]",
     certifications: [
       "Certified Smile Designer",
       "Expert in Teeth Whitening",
       "Digital Smile Planning Specialist"
-    ]
-  },
-  {
-    id: 3,
-    name: "Dr. Arjun Singh",
-    title: "Orthodontist & Implant Specialist",
-    specialty: "Orthodontics, Implant Dentistry",
-    qualifications: ["BDS", "MDS (Orthodontics)", "Implant Certification"],
-    experience: "10+ Years",
-    bio: "Dr. Singh specializes in modern orthodontics and dental implants. He combines cutting-edge technology with compassionate care to deliver outstanding results.",
-    image: "/images/doctor-arjun.png",
-    certifications: [
-      "BDS, MDS Orthodontics",
-      "ITI Implant Specialist",
-      "Digital Imaging Expert"
     ]
   }
 ];
