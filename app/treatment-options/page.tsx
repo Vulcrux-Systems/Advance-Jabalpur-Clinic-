@@ -33,7 +33,7 @@ export default function TreatmentOptionsPage() {
         pageName="Treatment Options"
         cta={[
           { label: 'Book Appointment', href: '/contact' },
-          { label: 'Call Now', href: 'tel:+919330153855' },
+          { label: 'Call Now', href: 'tel:+919294777707' },
         ]}
       />
 

@@ -3,18 +3,17 @@ export const clinicInfo = {
   tagline: 'A Multispeciality Dental Centre of Excellence',
   tagline2: 'Painless Dental Care',
   
-  // Contact Information
   topContact: {
-    phones: ['033 35675767', '+91 9330153855', '+91 8337098496'],
+    phones: ['+91 92947 77707'],
   },
   
-  phone: '+91 9330153855',
-  phoneAlt: '+91 8337098496',
-  phone3: '033 35675767',
+  phone: '+91 92947 77707',
+  phoneAlt: '',
+  phone3: '',
   email: 'info@greatlakesdentalclinic.com',
   address: '27, Janak Road, Behind Lake Mall, Kalighat, Kolkata, West Bengal 700029',
   addressShort: 'Kalighat, Kolkata',
-  whatsapp: '+91 9330153855',
+  whatsapp: '+91 92947 77707',
   
   // Google Maps
   googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.5638404117526!2d88.35847892346922!3d22.53126427108922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0206c3d3d3d3d3%3A0x0!2s27%20Janak%20Road%2C%20Kalighat!5e0!3m2!1sen!2sin!4v1234567890',
@@ -26,7 +25,7 @@ export const clinicInfo = {
   },
   
   emergency: {
-    phone: '+91 9330153855',
+    phone: '+91 92947 77707',
     available: '24/7',
   },
   

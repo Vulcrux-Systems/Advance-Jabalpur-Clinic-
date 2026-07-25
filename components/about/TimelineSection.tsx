@@ -5,7 +5,7 @@ export default function TimelineSection() {
     {
       year: '2009',
       title: 'Clinic Founded',
-      desc: 'Dr. Rajesh Mulchandani opens the first dental practice in Ranjhi.'
+      desc: 'Dr. Akhilesh Mulchandani opens the first dental practice in Ranjhi.'
     },
     {
       year: '2014',

@@ -24,7 +24,7 @@ export function HeroWithDoctor() {
             <div className="relative h-[500px] lg:h-[600px] rounded-[2.5rem] overflow-hidden bg-gray-100 shadow-2xl border-4 border-white group">
               <Image
                 src="/images/image copy.png"
-                alt="Dr. Rajesh Mulchandani"
+                alt="Dr. Akhilesh Mulchandani"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
@@ -33,7 +33,7 @@ export function HeroWithDoctor() {
             {/* Top Left Badge */}
             <div className="absolute top-10 -left-6 md:-left-12 bg-[#0F4C81] text-white px-6 py-4 rounded-2xl shadow-xl z-10 flex flex-col">
               <span className="text-xs font-bold tracking-wider text-blue-200 uppercase mb-1">Chief Dental Surgeon</span>
-              <span className="text-xl font-bold">Dr. Rajesh Mulchandani</span>
+              <span className="text-xl font-bold">Dr. Akhilesh Mulchandani</span>
             </div>
 
             {/* Bottom Right Badge */}

@@ -36,7 +36,7 @@ export default function TreatmentResultsPage() {
         cta={[
           { label: 'Book Consultation', href: '/contact' },
           { label: 'View Gallery', href: '#gallery' },
-          { label: 'Call Now', href: 'tel:+919330153855' },
+          { label: 'Call Now', href: 'tel:+919294777707' },
         ]}
       />
 
