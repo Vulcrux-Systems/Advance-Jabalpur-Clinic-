@@ -15,7 +15,7 @@ export const CLINIC = {
   website: "www.advanceddentaljabalpur.in",
   hours: "Mon - Sat: 10:00 AM - 8:30 PM",
   emergency: "24×7 Emergency",
-  whatsapp: "+91 92947 77707",
+  whatsapp: "+91 89827 77707",
   googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.5638404117526!2d79.193...placeholder",
   stats: {
     patients: "10,000+",
