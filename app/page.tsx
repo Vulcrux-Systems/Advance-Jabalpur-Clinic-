@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 import TrustBadgesMarquee from '@/components/home/TrustBadgesMarquee'
 import HeroSection from '@/components/home/HeroSection'
 import { HeroWithDoctor } from '@/components/home/HeroWithDoctor'
+import AchievementsAwards from '@/components/home/AchievementsAwards'
 import { WhyChooseUs } from '@/components/home/WhyChooseUs'
 import ModernTechnology from '@/components/home/ModernTechnology'
 import PatientStories from '@/components/home/PatientStories'
@@ -31,19 +32,22 @@ export default function Home() {
         {/* Meet Your Dentist Section */}
         <HeroWithDoctor />
 
+        {/* Achievements & Awards Section */}
+        <AchievementsAwards />
+
         {/* Our Treatments Section */}
-        <section className="py-20 md:py-32 bg-[#F8FAFC]">
-          <div className="max-w-[1400px] mx-auto px-6">
+        <section className="py-20 md:py-32 bg-surface">
+          <div className="max-w-350 mx-auto px-6">
             {/* Section header */}
             <div className="mb-16 text-center">
-              <div className="inline-block bg-white text-[#0F4C81] px-4 py-2 rounded-full text-sm font-bold tracking-wide mb-4 shadow-sm">
+              <div className="inline-block bg-white text-primary px-4 py-2 rounded-full text-sm font-bold tracking-wide mb-4 shadow-sm">
                 <span className="text-[#F26522] mr-2">✦</span> OUR TREATMENTS
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#0F172A] mb-6 tracking-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-text-primary mb-6 tracking-tight">
                 Complete Dental Care Under<br />
                 One Roof
               </h2>
-              <p className="text-[#475569] text-xl max-w-2xl mx-auto leading-relaxed">
+              <p className="text-text-secondary text-xl max-w-2xl mx-auto leading-relaxed">
                 From routine check-ups to complex full-mouth rehabilitation — our specialists deliver world-class dentistry tailored to you.
               </p>
             </div>
@@ -65,8 +69,8 @@ export default function Home() {
                   
                   {/* Content Section */}
                   <div className="p-8 flex-1 flex flex-col">
-                    <h3 className="text-2xl font-bold text-[#0F172A] mb-3 group-hover:text-[#0F4C81] transition-colors">{treatment.name}</h3>
-                    <p className="text-[#475569] text-base leading-relaxed mb-6 flex-1">{treatment.shortDesc}</p>
+                    <h3 className="text-2xl font-bold text-text-primary mb-3 group-hover:text-primary transition-colors">{treatment.name}</h3>
+                    <p className="text-text-secondary text-base leading-relaxed mb-6 flex-1">{treatment.shortDesc}</p>
                     <Link href={`/treatments/${treatment.id}`} className="text-[#F26522] font-semibold text-lg hover:underline flex items-center gap-2 mt-auto">
                       Learn more <span>→</span>
                     </Link>
