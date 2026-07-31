@@ -68,7 +68,7 @@ export default function HeroSection() {
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0F4C81] flex items-center">
-                  12,000<span className="text-[#F26522]">+</span>
+                  50,000<span className="text-[#F26522]">+</span>
                 </div>
                 <div className="text-[10px] sm:text-xs md:text-sm text-[#64748B] font-medium whitespace-nowrap">Happy Patients</div>
               </div>

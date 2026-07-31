@@ -14,7 +14,7 @@ export default function PatientStories() {
               <Star size={14} className="text-[#0F4C81]" /> PATIENT STORIES
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-[#0F172A] leading-[1.1] tracking-tight">
-              Loved by 12,000+ smiling<br />
+              Loved by 50,000+ smiling<br />
               patients.
             </h2>
           </div>

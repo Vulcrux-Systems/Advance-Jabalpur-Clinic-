@@ -7,8 +7,8 @@ export const CLINIC = {
   slogan: "Your Smile, Our Priority",
   address: "Main Road, Ranjhi, Jabalpur, Madhya Pradesh 482005",
   addressShort: "Jabalpur, MP",
-  phone: "+91 92947 77707",
-  phoneRaw: "+919294777707",
+  phone: "+91 89827 77707",
+  phoneRaw: "+918982777707",
   phone2: "",
   phone3: "",
   email: "info@advancedentaljabalpur.in",
@@ -51,7 +51,8 @@ export const TREATMENTS = [
     icon: "🦷",
     shortDesc: "Straight teeth transformation",
     fullDesc: "Expert orthodontic solutions for perfect tooth alignment using latest technology including traditional braces and modern aligners.",
-    image: "/images/treatment-orthodontics.png",
+    image: "/images/Orthodontics.png",
+    bgImage: '/images/orthodontics_new.png',
     services: [
       { name: "Fixed Braces", desc: "Traditional metal braces for effective tooth alignment" },
       { name: "Ceramic Braces", desc: "Tooth-colored braces for aesthetic appearance" },
@@ -77,6 +78,7 @@ export const TREATMENTS = [
     shortDesc: "Permanent tooth replacement",
     fullDesc: "Advanced dental implant technology for missing teeth replacement with osseointegration and lifetime durability.",
     image: "/images/treatment-implants.png",
+    bgImage: '/images/Dental Implants_new.png',
     services: [
       { name: "Single Tooth Implant", desc: "Replace one missing tooth" },
       { name: "Multiple Implants", desc: "Replace several teeth with multiple implants" },
@@ -102,7 +104,9 @@ export const TREATMENTS = [
     icon: "✨",
     shortDesc: "Smile makeover services",
     fullDesc: "Transform your smile with comprehensive cosmetic dental procedures to enhance beauty and confidence.",
-    image: "/images/treatment-cosmetic.png",
+    image: "/images/Cosmetic.png",
+    bgImage: '/images/Cosmetic Dentistry.png',
+
     services: [
       { name: "Teeth Whitening", desc: "Professional bleaching for bright white smile" },
       { name: "Composite Bonding", desc: "Repair chips and gaps with tooth-colored resin" },
@@ -128,7 +132,9 @@ export const TREATMENTS = [
     icon: "🌱",
     shortDesc: "Gum health and implantology",
     fullDesc: "Specialized treatment for gum diseases and comprehensive implant dentistry solutions.",
-    image: "/images/IMG_7096.JPG.jpeg",
+    image: "/images/IMG_7097.JPG.jpeg",
+    bgImage: '/images/Periodontics & Implants_new.png',
+
     services: [
       { name: "Gum Treatment", desc: "Cure gingivitis and periodontitis" },
       { name: "Scaling & Root Planing", desc: "Deep cleaning for gum health" },
@@ -154,6 +160,8 @@ export const TREATMENTS = [
     shortDesc: "Tooth repair and restoration",
     fullDesc: "Comprehensive restoration solutions for damaged teeth using advanced materials and techniques.",
     image: "/images/treatment-whitening.png",
+    bgImage: '/images/Restorative Dentistry_new.png',
+
     services: [
       { name: "Amalgam Fillings", desc: "Traditional silver amalgam restoration" },
       { name: "Composite Fillings", desc: "Tooth-colored aesthetic fillings" },
@@ -178,7 +186,9 @@ export const TREATMENTS = [
     icon: "🛡️",
     shortDesc: "Dental health maintenance",
     fullDesc: "Professional preventive care to maintain optimal oral health and prevent future problems.",
-    image: "/images/treatment-kids.png",
+    image: "/images/Preventive.png",
+    bgImage: '/images/Preventive Care_new.png',
+
     services: [
       { name: "Regular Checkups", desc: "Bi-annual dental examination" },
       { name: "Professional Cleaning", desc: "Remove tartar and plaque buildup" },
@@ -299,7 +309,7 @@ export const DOCTORS = [
     name: "Dr. Akhilesh Mulchandani",
     title: "Chief Dental Surgeon",
     specialty: "Orthodontics, Implantology, Full-mouth Rehabilitation",
-    qualifications: ["BDS", "MDS (Orthodontics)", "Fellowship in Implantology (Germany)"],
+    qualifications: ["BDS", "MDS (Orthodontics & Dentofacial Orthopaedics)", "Fellowship in Implantology (Germany)"],
     experience: "15+ Years",
     bio: "Dr. Akhilesh Mulchandani is a renowned dental surgeon practicing in Jabalpur with over 15 years of experience. He specializes in complex implantology cases, full-mouth rehabilitation and painless dental procedures. Together with a team of specialists, we deliver world-class dentistry rooted in compassion, precision and modern technology.",
     image: "/images/IMG_7025.JPG.jpeg",
@@ -307,7 +317,7 @@ export const DOCTORS = [
     certifications: [
       "BDS",
       "Fellowship in Implantology (Germany)",
-      "MDS - Oral & Maxillofacial Surgery",
+      "MDS - Orthodontics & Dentofacial Orthopaedics",
       "Implantologist & Maxillofacial Surgeon",
       "OSHA Certified Sterilization Protocols"
     ]
@@ -327,7 +337,41 @@ export const DOCTORS = [
       "Expert in Teeth Whitening",
       "Digital Smile Planning Specialist"
     ]
+  },
+  {
+    id: 3,
+    name: "Dr. Pranav Asati",
+    title: "Cosmetic & Restorative Dentist",
+    specialty: "Cosmetic Dentistry, Smile Design",
+    qualifications: ["BDS", "MDS ORAL AND MAXILLOFACIAL SURGEON"],
+    experience: "12+ Years",
+    bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Priya Mulchandani creates beautiful, natural-looking smiles that boost confidence.",
+    image: "/images/Dr_Pranav_Asati.jpeg",
+    imagePosition: "object-top",
+    certifications: [
+      "Certified Smile Designer",
+      "Expert in Teeth Whitening",
+      "Digital Smile Planning Specialist"
+    ]
+  },
+
+  {
+    id: 4,
+    name: "Dr. Nishant Shrivastava",
+    title: "Cosmetic & Restorative Dentist",
+    specialty: "Cosmetic Dentistry, Smile Design",
+    qualifications: ["BDS", "MDS "],
+    experience: "12+ Years",
+    bio: "Specializing in cosmetic dentistry and smile makeovers, Dr. Priya Mulchandani creates beautiful, natural-looking smiles that boost confidence.",
+    image: "/images/Dr_Nishant_Shrivastava.png",
+    imagePosition: "object-[center_45%]",
+    certifications: [
+      "Certified Smile Designer",
+      "Expert in Teeth Whitening",
+      "Digital Smile Planning Specialist"
+    ]
   }
+
 ];
 
 export const TESTIMONIALS = [
@@ -409,22 +453,22 @@ export const TECHNOLOGIES = [
   {
     name: "Laser Dentistry",
     description: "Minimally invasive procedures with faster healing.",
-    image: "/images/laser_dentistry_generated.png"
+    image: "/images/Laser.jpg"
   },
   {
     name: "AI Dental Checkup",
     description: "Fast & contactless digital screening and accurate diagnosis.",
-    image: "/images/ai_scanner_generated.png"
+    image: "/images/IMG_7128.JPG.jpeg"
   },
   {
     name: "Microscopic Root Canal",
     description: "Painless single-sitting root canals with advanced magnification.",
-    image: "/images/dental_microscope_generated.png"
+    image: "/images/Microscopic.jpeg"
   },
   {
     name: "Digital Smile Design",
     description: "Preview your new smile before treatment begins.",
-    image: "/images/smile_design_generated.png"
+    image: "/images/DigitalSmile.jpeg"
   },
   {
     name: "Autoclave Sterilization",

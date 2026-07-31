@@ -39,7 +39,7 @@ export function TreatmentHero({ title, subtitle, description }: TreatmentHeroPro
               <ArrowRight size={18} />
             </button>
             <button className="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              Free Assessment
+              Free Assessmente
             </button>
           </div>
         </motion.div>
