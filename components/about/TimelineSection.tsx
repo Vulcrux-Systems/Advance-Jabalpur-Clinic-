@@ -3,7 +3,7 @@
 export default function TimelineSection() {
   const timeline = [
     {
-      year: '2009',
+      year: '2011',
       title: 'Clinic Founded',
       desc: 'Dr. Akhilesh Mulchandani opens the first dental practice in Ranjhi.'
     },
@@ -24,7 +24,7 @@ export default function TimelineSection() {
     },
     {
       year: 'Today',
-      title: '12,000+ Smiles',
+      title: '50,000+ Smiles',
       desc: 'A trusted name across central India, with patients flying in from neighboring states.'
     }
   ]
