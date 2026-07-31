@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function MissionVisionValuesSection() {
   const cards = [
     {
-      image: '/images/IMG_7047.JPG.jpeg',
+      image: '/images/IMG_7038.JPG.jpeg',
       title: 'Our Mission',
       desc: 'To deliver world-class dental care that is painless, ethical and affordable for every patient that walks through our doors.'
     },

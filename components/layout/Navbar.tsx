@@ -32,7 +32,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <img src="/images/logo.jpeg" alt="Advanced Ranjhi Dental Logo" className="h-10 w-auto" />
           <span className="font-extrabold text-[#0F4C81] text-lg lg:text-xl hidden sm:inline tracking-tight">
-            Advance Dental Jabalpur
+            Advanced Dental Jabalpur
           </span>
         </Link>
 

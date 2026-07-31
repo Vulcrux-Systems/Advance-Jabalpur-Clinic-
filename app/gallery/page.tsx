@@ -10,12 +10,12 @@ export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const galleryItems = [
-    { id: 1, category: 'braces', title: 'Orthodontic Transformation', image: '/images/case-before-1.png' },
-    { id: 2, category: 'implants', title: 'Dental Implant Case', image: '/images/implants.png' },
+    { id: 1, category: 'braces', title: 'Orthodontic Transformation', image: '/images/Orthodontic Transformation.jpeg' },
+    { id: 2, category: 'implants', title: 'Dental Implant Case', image: '/images/Dental_Case.webp' },
     { id: 3, category: 'cosmetic', title: 'Smile Makeover', image: '/images/IMG_7078.JPG.jpeg' },
     { id: 4, category: 'braces', title: 'Complex Case Resolution', before: '/gallery/braces2-before.jpg', after: '/gallery/braces2-after.jpg' },
-    { id: 5, category: 'whitening', title: 'Professional Whitening', before: '/gallery/whiten-before.jpg', after: '/gallery/whiten-after.jpg' },
-    { id: 6, category: 'implants', title: 'Full Mouth Implants', before: '/gallery/implants-before.jpg', after: '/gallery/implants-after.jpg' },
+    { id: 5, category: 'whitening', title: 'Professional Whitening', image: '/images/Whitening.png' },
+    { id: 6, category: 'implants', title: 'Full Mouth Implants', image: '/images/Implants.png' },
   ];
 
   const categories = ['all', 'braces', 'implants', 'cosmetic', 'whitening'];
