@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock, Globe, ChevronRight } from 'lucide-react';
 import { CLINIC } from '@/lib/data/site';
 
+
 export function Footer() {
   return (
     <footer className="bg-primary text-white pt-20 pb-10">
