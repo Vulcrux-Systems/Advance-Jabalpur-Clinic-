@@ -26,7 +26,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+    <section className="py-20 md:py-32 bg-linear-to-br from-gray-50 via-white to-blue-50">
       <div className="container-custom">
         {/* Section Header */}
         <motion.div

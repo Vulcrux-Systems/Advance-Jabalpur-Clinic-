@@ -4,7 +4,7 @@ import { TRUST_BADGES } from '@/lib/data/site'
 
 export default function TrustBadgesMarquee() {
   return (
-    <div className="w-full bg-white py-4 overflow-hidden border-b border-[#E2E8F0]">
+    <div className="w-full bg-white py-4 overflow-hidden border-b border-border">
       <style>{`
         @keyframes scroll-left {
           0% { transform: translateX(0); }
@@ -25,7 +25,7 @@ export default function TrustBadgesMarquee() {
           {TRUST_BADGES.map((badge, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-2 px-4 py-2 whitespace-nowrap text-sm font-medium text-[#0F4C81]"
+              className="flex items-center gap-2 px-4 py-2 whitespace-nowrap text-sm font-medium text-primary"
             >
               <span className="text-[#F26522]">●</span>
               {badge}
@@ -34,7 +34,7 @@ export default function TrustBadgesMarquee() {
           {TRUST_BADGES.map((badge, idx) => (
             <div
               key={`repeat-${idx}`}
-              className="flex items-center gap-2 px-4 py-2 whitespace-nowrap text-sm font-medium text-[#0F4C81]"
+              className="flex items-center gap-2 px-4 py-2 whitespace-nowrap text-sm font-medium text-primary"
             >
               <span className="text-[#F26522]">●</span>
               {badge}

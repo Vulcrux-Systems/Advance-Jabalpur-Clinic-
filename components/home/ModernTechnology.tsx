@@ -16,11 +16,11 @@ const getTechIcon = (name: string) => {
 
 export default function ModernTechnology() {
   return (
-    <section className="relative py-24 md:py-32 bg-[#0F4C81]">
-      <div className="relative max-w-[1400px] mx-auto px-6">
+    <section className="relative py-24 md:py-32 bg-primary">
+      <div className="relative max-w-350 mx-auto px-6">
         {/* Section header */}
         <div className="mb-16 text-center">
-          <div className="inline-block bg-white text-[#0F4C81] px-4 py-2 rounded-full text-sm font-bold tracking-wide mb-6">
+          <div className="inline-block bg-white text-primary px-4 py-2 rounded-full text-sm font-bold tracking-wide mb-6">
             MODERN TECHNOLOGY
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight">
@@ -41,7 +41,7 @@ export default function ModernTechnology() {
             >
               {/* Image Container with fixed height (260px), rounded corners (20px), object-fit */}
               {tech.image && (
-                <div className="w-full relative h-[260px] overflow-hidden">
+                <div className="w-full relative h-65 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={tech.image}
@@ -53,7 +53,7 @@ export default function ModernTechnology() {
               )}
               
               {/* Content */}
-              <div className="p-6 md:p-8 flex flex-col flex-grow">
+              <div className="p-6 md:p-8 flex flex-col grow">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 shrink-0 bg-[#F26522] rounded-xl flex items-center justify-center text-white shadow-lg">
                     {getTechIcon(tech.name)}
