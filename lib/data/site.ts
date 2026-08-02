@@ -51,7 +51,7 @@ export const TREATMENTS = [
     icon: "🦷",
     shortDesc: "Straight teeth transformation",
     fullDesc: "Expert orthodontic solutions for perfect tooth alignment using latest technology including traditional braces and modern aligners.",
-    image: "/images/Orthodontics.png",
+    image: "/images/IMG_7084.JPG.jpeg",
     bgImage: '/images/orthodontics_new.png',
     services: [
       { name: "Fixed Braces", desc: "Traditional metal braces for effective tooth alignment" },
@@ -104,7 +104,7 @@ export const TREATMENTS = [
     icon: "✨",
     shortDesc: "Smile makeover services",
     fullDesc: "Transform your smile with comprehensive cosmetic dental procedures to enhance beauty and confidence.",
-    image: "/images/Cosmetic.png",
+    image: "/images/IMG_7052.JPG.jpeg",
     bgImage: '/images/Cosmetic Dentistry.png',
 
     services: [
@@ -159,7 +159,7 @@ export const TREATMENTS = [
     icon: "🔧",
     shortDesc: "Tooth repair and restoration",
     fullDesc: "Comprehensive restoration solutions for damaged teeth using advanced materials and techniques.",
-    image: "/images/treatment-whitening.png",
+    image: "/images/IMG_7119.JPG.jpeg",
     bgImage: '/images/Restorative Dentistry_new.png',
 
     services: [
@@ -186,7 +186,7 @@ export const TREATMENTS = [
     icon: "🛡️",
     shortDesc: "Dental health maintenance",
     fullDesc: "Professional preventive care to maintain optimal oral health and prevent future problems.",
-    image: "/images/Preventive.png",
+    image: "/images/IMG_7084.JPG.jpeg",
     bgImage: '/images/Preventive Care_new.png',
 
     services: [
@@ -410,7 +410,7 @@ export const WHY_CHOOSE_US = [
     title: "Painless Procedures",
     description: "Advanced anesthesia & laser tools for a comfortable visit.",
     icon: "💖",
-    image: "/images/IMG_7051.JPG.jpeg"
+    image: "/images/IMG_7013.JPG.jpeg"
   },
   {
     title: "Specialist Team",

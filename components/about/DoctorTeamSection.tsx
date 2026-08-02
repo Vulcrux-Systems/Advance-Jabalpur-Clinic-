@@ -16,7 +16,8 @@ export default function DoctorTeamSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Updated grid for responsive layout (3 on tablet, 4 on desktop) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {DOCTORS.map((doctor) => (
             <DoctorCard
               key={doctor.id}
@@ -25,6 +26,7 @@ export default function DoctorTeamSection() {
               title={doctor.title}
               qualifications={doctor.qualifications}
               image={doctor.image}
+              imagePosition={doctor.imagePosition} // <<-- YES! Is line se Photo cut honi band ho jayegi
             />
           ))}
         </div>
