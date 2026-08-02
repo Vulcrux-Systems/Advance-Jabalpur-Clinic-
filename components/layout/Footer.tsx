@@ -21,6 +21,7 @@ export function Footer() {
                   style={{ filter: 'invert(1)', mixBlendMode: 'screen' }}
                 />
               </div>
+
             </div>
             <p className="text-blue-100 text-sm leading-relaxed mb-8 pr-4">
               Painless dental care powered by the latest technology. We are committed to delivering world-class dentistry in Jabalpur with care, precision and warmth.
