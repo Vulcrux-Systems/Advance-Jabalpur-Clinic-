@@ -402,6 +402,34 @@ export const TESTIMONIALS = [
     rating: 5,
     text: "My smile transformation has changed my life. Dr. Sharma's cosmetic work is exceptional. Thank you!",
     image: "/testimonial-4.jpg"
+  },
+  {
+    name: "Vikram Malhotra",
+    treatment: "Root Canal Treatment",
+    rating: 5,
+    text: "I had a sudden severe toothache and Dr. Mulchandani performed a microscopic root canal in a single sitting. Completely painless and relief was instant!",
+    image: "/testimonial-5.jpg"
+  },
+  {
+    name: "Akansha Shrivastava",
+    treatment: "Teeth Whitening",
+    rating: 5,
+    text: "Got my teeth whitened before my wedding. The results are amazing! My teeth look natural and bright. The staff is super friendly.",
+    image: "/testimonial-6.jpg"
+  },
+  {
+    name: "Sneha Jain",
+    treatment: "Laser Dentistry",
+    rating: 5,
+    text: "Excellent experience with laser gum treatment. No bleeding, no pain, and extremely fast recovery. The technology here is top-notch.",
+    image: "/testimonial-7.jpg"
+  },
+  {
+    name: "Raj Gupta",
+    treatment: "Pediatric Dentistry",
+    rating: 5,
+    text: "Brought my 7-year-old here for dental fillings. Dr. Mulchandani and the staff made her feel so comfortable. She actually enjoyed her dentist visit!",
+    image: "/testimonial-8.jpg"
   }
 ];
 

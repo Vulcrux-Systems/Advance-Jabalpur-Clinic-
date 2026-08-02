@@ -85,7 +85,7 @@ export function TreatmentOverviewSection() {
 
                   {/* Content */}
                   <div className="p-8">
-                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${treatment.color} text-white flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}>
+                    <div className={`w-14 h-14 rounded-xl bg-linear-to-br ${treatment.color} text-white flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}>
                       {treatment.icon}
                     </div>
 
