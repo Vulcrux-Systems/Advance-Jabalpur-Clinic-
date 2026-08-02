@@ -5,7 +5,7 @@ import TreatmentCard from './TreatmentCard'
 
 export default function TreatmentsGridSection() {
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-15 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-5xl md:text-6xl font-black text-[#0F172A] mb-4 text-center">
           A complete dental <span className="text-[#F26522]">ecosystem</span>

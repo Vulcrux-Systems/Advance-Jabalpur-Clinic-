@@ -8,7 +8,7 @@ export default function AboutHeroSection() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 hover:scale-105"
-        style={{ backgroundImage: "url('/images/IMG_7001.JPG.jpeg')" }}
+        style={{ backgroundImage: "url('/images/IMG_7041.JPG.jpeg')" }}
       />
       
       {/* Premium Dark/Blue Overlay for Readability */}
