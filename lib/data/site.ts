@@ -186,7 +186,7 @@ export const TREATMENTS = [
     icon: "🛡️",
     shortDesc: "Dental health maintenance",
     fullDesc: "Professional preventive care to maintain optimal oral health and prevent future problems.",
-    image: "/images/IMG_7084.JPG.jpeg",
+    image: "/images/IMG_7112.JPG.jpeg",
     bgImage: '/images/Preventive Care_new.png',
 
     services: [
