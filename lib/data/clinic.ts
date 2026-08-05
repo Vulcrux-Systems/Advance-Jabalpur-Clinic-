@@ -10,7 +10,7 @@ export const clinicInfo = {
   phone: '+91 92947 77707',
   phoneAlt: '',
   phone3: '',
-  email: 'info@greatlakesdentalclinic.com',
+  email: 'advanceddentaljabalpur@gmail.com',
   address: '27, Janak Road, Behind Lake Mall, Kalighat, Kolkata, West Bengal 700029',
   addressShort: 'Kalighat, Kolkata',
   whatsapp: '+91 89827 77707',
