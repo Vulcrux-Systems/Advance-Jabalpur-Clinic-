@@ -16,6 +16,8 @@ export default function ContactPage() {
     subject: '',
     message: ''
   });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e: any) => {
     setFormData({
@@ -24,9 +26,30 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+    setErrorMessage('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to send message.');
+      }
+
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (err: any) {
+      setStatus('error');
+      setErrorMessage(err.message || 'Something went wrong. Please try again later.');
+    }
   };
 
   return (
@@ -180,10 +203,22 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full bg-[#F26522] text-white py-3 rounded-lg font-bold hover:bg-[#E55A1A] transition"
+                      disabled={status === 'sending'}
+                      className="w-full bg-[#F26522] text-white py-3 rounded-lg font-bold hover:bg-[#E55A1A] transition disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {status === 'sending' ? 'Sending...' : 'Send Message'}
                     </button>
+
+                    {status === 'success' && (
+                      <p className="text-green-600 font-medium text-center">
+                        Thank you! Your message has been sent. We'll get back to you soon.
+                      </p>
+                    )}
+                    {status === 'error' && (
+                      <p className="text-red-600 font-medium text-center">
+                        {errorMessage}
+                      </p>
+                    )}
                   </form>
                 </div>
               </div>
